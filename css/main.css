@@ -12,7 +12,20 @@ html {
   text-size-adjust: 100%;
   font-family: "Denk One", sans-serif;
   font-family: "Georgia", serif;
+}
+
+figcaption {
   background-color: #e2e2e2;
+  padding: 1em;
+  font-size: 100%;
+  line-height: 1.3;
+}
+
+figure {
+  margin: 0;
+}
+
+body {
   margin: 0;
 }
 
@@ -20,17 +33,72 @@ html {
   box-sizing: inherit;
 }
 
-h1 {
+h2 {
   font-weight: bold;
   font-family: "Denk One";
   font-size: 1.5rem;
+  margin: 0;
 }
 
 p {
-  font-size: 1.5rem;
   font-family: "Georgia";
 }
 
 img {
   width: 100%;
+  display: block;
+}
+
+@media only screen and (min-width: 38em) {
+
+  figure {
+    position: relative;
+  }
+  figcaption {
+    position: absolute;
+    width: 20em;
+    right: 1.3rem;
+    bottom: 1.3rem;
+    background-color: rgba(0, 0, 0, .3);
+    color: #fff;
+    font-size: 110%;
+    border-radius: 10px;
+    line-height: 1.4;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+
+  figure {
+    position: relative;
+  }
+  figcaption {
+    position: absolute;
+    width: 20em;
+    right: 1.3rem;
+    bottom: 1.3rem;
+    background-color: rgba(0, 0, 0, .3);
+    color: #fff;
+    font-size: 120%;
+    border-radius: 10px;
+    line-height: 1.5;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+
+  figure {
+    position: relative;
+  }
+  figcaption {
+    position: absolute;
+    width: 20em;
+    right: 1.3rem;
+    bottom: 1.3rem;
+    background-color: rgba(0, 0, 0, .3);
+    color: #fff;
+    font-size: 130%;
+    border-radius: 10px;
+    line-height: 1.6;
+  }
 }
